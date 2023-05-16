@@ -21,6 +21,6 @@ div.centered p {
     font-family: 'Arial';
 }
 body {
-    background: #000 url("https://github.com/privmel/privmel.github.io/blob/05b332899c1803f63e4adf7b0b5bb31711d19c38/data/angel-bg.jpg?raw=true") no-repeat;
+    background: #000 url(/data/angel-bg.jpg) no-repeat;
     color: #ddd;
 }
