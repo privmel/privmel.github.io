@@ -21,6 +21,6 @@ div.centered p {
     font-family: 'Arial';
 }
 body {
-    background: #000 url(./angel-bg.jpg) no-repeat;
+    background: #000 url(/angel-bg.jpg) no-repeat;
     color: #ddd;
 }
