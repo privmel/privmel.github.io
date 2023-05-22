@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>🏳️‍🌈</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/window.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/data/draggable.js"></script>
+    <!-- <link rel="icon" type="image/x-icon" href="/"> -->
+</head>
+<body>
+    <div id="background">
+        <div class="centered">
+            <div id="drag" class="window" style="min-width: 500px; max-width: 40%;">
+                <div class="windowtitle">
+                    <div class="windowtitle-text"> mel </div>
+                    <div class="windowtitle-controls">
+                        <button aria-label="Minimize"><img src="/data/minimize.svg"/></button>
+                        <button aria-label="Maximize"><img src="/data/maximize.svg"/></button>
+                        <button aria-label="Close"><img src="/data/close.svg"/></button>
+                    </div>
+                </div>
+                <!--
+                <div class="nav">
+                     <ul>
+                        <li><a>?</a></li>
+                        <li><a>clips</a></li>
+                        <li><a>my account</a></li>
+                    </ul>
+                </div>
+                -->
+                <div class="window-body">
+                    <img class="bgimg" src="/data/bg.jpg" style="width: 100%">
+                    <!-- style="width: 550px; display: block; margin-left: auto; margin-right: auto;" -->
+                    <hr id="solid">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div id="left-window">
+            <div id="drag" class="window" style="min-width: 200px; max-width: 20%">
+                <div class="windowtitle">
+                    <div class="windowtitle-text"> links </div>
+                    <div class="windowtitle-controls">
+                        <button aria-label="Minimize"><img src="/data/minimize.svg"/></button>
+                        <button aria-label="Maximize"><img src="/data/maximize.svg"/></button>
+                        <button aria-label="Close"><img src="/data/close.svg"/></button>
+                    </div>
+                </div>
+                <div class="window-body">
+                    <p> content </p>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>

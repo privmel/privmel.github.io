@@ -1,0 +1,8 @@
+to-do:
+
+> make site responsive
+> function for minimizing, re-sizing, ( closing? ) and dragging the windows
+> left window for links: github? twitter? ...
+> mid window for graphic, and music. 
+> right window for other stuff?
+
