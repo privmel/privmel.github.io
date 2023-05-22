@@ -1,0 +1,112 @@
+:root {
+    --text-color: #222222;
+    --surface: #ffffff;
+    --button-highlight: #ffffff;
+    --button-face: #dfdfdf;
+    --button-shadow: #0000006c;
+    --window-frame: #0a0a0a1a;
+    /* #0a0a0a1a; */
+
+    --dialog-pink: #F1CEFA;
+    --dialog-pink-light: #fcdfec;
+    --dialog-gray: #808080;
+    --dialog-gray-light: #b5b5b5;
+
+    --element-spacing: 8px;
+
+
+    --border-window-inner: inset -2px -2px var(--button-shadow),
+    inset 2px 2px var(--button-highlight);
+    --border-window-outer: inset -1px -1px var(--window-frame),
+    inset 1px 1px var(--button-face);
+}
+
+.window {
+    box-shadow: var(--border-window-outer), var(--border-window-inner);
+    background: var(--surface);
+    padding: 3px;
+    border: px solid var(--dialog-pink);
+    cursor: mouse;
+}
+
+.window-body {
+    margin: var(--element-spacing);
+}
+
+.nav > ul, li  {
+    height: 23px;
+    padding-right: 1px;
+    margin: 0;
+    margin-top: 1px;
+    font-size: 11px;
+    float: right;
+    font-family: 'Arial';
+}
+
+.nav li+li::after {
+    content: " | ";
+}
+
+button {
+  box-sizing: border-box;
+  border: none;
+  color: transparent;
+  /* background: var(--surface); */
+  min-width: 75px;
+  min-height: 23px;
+  padding: 0 12px;
+}
+
+.window .windowtitle {
+    cursor: move;
+  }
+
+.windowtitle {
+    background: linear-gradient(
+    90deg,
+    var(--dialog-pink),
+    var(--dialog-pink-light)
+    );
+    padding: 3px 2px 3px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Pixelated MS Sans Serif", Arial;
+    -webkit-font-smoothing: none;
+    font-size: 11px;
+}
+
+.windowtitle-text {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0;
+    margin-right: 24px;
+    text-shadow: rgba(0, 0, 0, 0.26) 1px 1px;
+}
+
+.windowtitle-controls {
+    display: flex;
+}
+
+.windowtitle-controls button {
+    padding: 0;
+    display: block;
+    min-width: 16px;
+    min-height: 14px;
+}
+
+.windowtitle-controls button[aria-label="Minimize"] {
+    background-repeat: no-repeat;
+    background-position: bottom 3px left 4px;
+  }
+  
+  .windowtitle-controls button[aria-label="Maximize"] {
+    background-repeat: no-repeat;
+    background-position: top 2px left 3px;
+  }
+  
+  .windowtitle-controls button[aria-label="Close"] {
+    margin-left: 2px;
+    background-repeat: no-repeat;
+    background-position: top 3px left 4px;
+  }
