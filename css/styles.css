@@ -16,8 +16,13 @@
 
 }   
 
+#restart {
+    width: 100%;
+    background: black;
+    z-index: 200;
+}
+
 #background {
-   content: ""; 
    margin-left: -8px;
    display: block;
    width: 100%;
@@ -44,6 +49,10 @@
     position: absolute;
     top: 425px;;
     left: 175px;
+}
+
+#right-window {
+    position: absolute;
 }
 
 div.centered {
