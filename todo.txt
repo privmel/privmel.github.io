@@ -2,6 +2,7 @@ to-do:
 
 > wawa.gif window ( maybe text :3 )
 > make site responsive
+> make window only draggable at title bar
 > function for minimizing, re-sizing, ( closing? ) and dragging the windows
 > left window for links: github? twitter? ...
 > mid window for graphic + nav 
