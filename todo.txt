@@ -1,8 +1,14 @@
 to-do:
 
+> wawa.gif window ( maybe text :3 )
 > make site responsive
 > function for minimizing, re-sizing, ( closing? ) and dragging the windows
 > left window for links: github? twitter? ...
-> mid window for graphic, and music. 
+> mid window for graphic + nav 
 > right window for other stuff?
+> new window for music player
+> new window for tetris because why not >:)
 
+> animate background?
+
+> diff site for mobile

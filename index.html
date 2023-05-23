@@ -14,57 +14,81 @@
 <body>
     <div id="restart"></div>
     <div id="background">
-        <div class="centered">
-            <div id="drag" class="window" style="min-width: 500px; max-width: 40%;">
-                <div class="windowtitle">
-                    <div class="windowtitle-text"> mel </div>
-                    <div class="windowtitle-controls">
-                        <button aria-label="Minimize"><img src="/data/minimize.svg"/></button>
-                        <button aria-label="Maximize"><img src="/data/maximize.svg"/></button>
-                        <button aria-label="Close"><img src="/data/close.svg"/></button>
+        <div class="flex-wow">
+            <div class="centered">
+                <div id="win" class="window" style="width: 800px">
+                    <div class="windowtitle">
+                        <div class="windowtitle-text"> mel </div>
+                        <div class="windowtitle-controls">
+                            <button aria-label="Minimize"><img src="/data/icon/minimize.svg"/></button>
+                            <button aria-label="Maximize"><img src="/data/icon/maximize.svg"/></button>
+                            <button aria-label="Close"><img src="/data/icon/close.svg"/></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <img class="bgimg" src="/data/bg.jpg" style="width: 100%">
+                        <!-- style="width: 550px; display: block; margin-left: auto; margin-right: auto;" -->
+                        <hr class="solid">
+                        <div class="nav">
+                            <ul style="justify-content: center; display: flex;;">
+                            <li><a href="/">clips</a></li>
+                            <li><a> ♥</a></li>
+                            <li><a href="/">account</a></li>
+                        </ul>
+                    </div>
                     </div>
                 </div>
-                <div class="window-body">
-                    <img class="bgimg" src="/data/bg.jpg" style="width: 100%">
-                    <!-- style="width: 550px; display: block; margin-left: auto; margin-right: auto;" -->
-                    <hr class="solid">
-                    <div class="nav">
-                        <ul style="justify-content: center; display: flex;;">
-                           <li><a href="/">clips</a></li>
-                           <li><a> ♥</a></li>
-                           <li><a href="/">account</a></li>
-                       </ul>
-                   </div>
+            </div>
+            <div id="links-window">
+                <div id="win2" class="window" style="display: ; width: 200px">
+                    <div class="windowtitle">
+                        <div class="windowtitle-text"> links </div>
+                        <div class="windowtitle-controls">
+                            <button aria-label="Minimize"><img src="/data/icon/minimize.svg"/></button>
+                            <button aria-label="Maximize"><img src="/data/icon/maximize.svg"/></button>
+                            <button aria-label="Close"><img src="/data/icon/close.svg"/ onclick="close2()"></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <p>[content]</p>
+                    </div>
+                </div>
+            </div> 
+            <div id="open-window">
+                <div id="win3" class="window" style="width: 400px">
+                    <div class="windowtitle">
+                        <div class="windowtitle-text">  open ✿ </div>
+                        <div class="windowtitle-controls">
+                            <button aria-label="Minimize"><img src="/data/icon/minimize.svg"/></button>
+                            <button aria-label="Maximize"><img src="/data/icon/maximize.svg"/></button>
+                            <button aria-label="Close"><img src="/data/icon/close.svg"/></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <p>hello</p>
+                        <section class="field-row" style="justify-content: flex-end">
+                            <button onclick="openWin2()"> links </button>
+                            <button onclick="openWin4()"> music </button>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>   
+            <div id="music-window">
+                <div id="win4" class="window" style="width: 250px; display:;">
+                    <div class="windowtitle">
+                        <div class="windowtitle-text"> music ♫ </div>
+                        <div class="windowtitle-controls">
+                            <button aria-label="Minimize"><img src="/data/icon/minimize.svg"/></button>
+                            <button aria-label="Maximize"><img src="/data/icon/maximize.svg"/></button>
+                            <button aria-label="Close"><img src="/data/icon/close.svg" onclick="close4()"/></button>
+                        </div>
+                    </div>
+                    <div class="window-body">
+                        <p>[music player]</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="left-window">
-            <div id="drag2" class="window" style="min-width: 200px; max-width: 20%">
-                <div class="windowtitle">
-                    <div class="windowtitle-text"> links </div>
-                    <div class="windowtitle-controls">
-                        <button aria-label="Minimize"><img src="/data/minimize.svg"/></button>
-                        <button aria-label="Maximize"><img src="/data/maximize.svg"/></button>
-                        <button aria-label="Close"><img src="/data/close.svg"/></button>
-                    </div>
-                </div>
-                <div class="window-body">
-                    <p>[content]</p>
-                </div>
-            </div>
-        </div> 
-        <div>
-            <div id="drag3" class="window" style="width: 400px">
-                <div class="windowtitle">
-                    <div class="windowtitle-text"> meow </div>
-                    <div class="windowtitle-controls">
-                        <button aria-label="Minimize"><img src="/data/minimize.svg"/></button>
-                        <button aria-label="Maximize"><img src="/data/maximize.svg"/></button>
-                        <button aria-label="Close"><img src="/data/close.svg"/></button>
-                    </div>
-                </div>
-                <div class="window-body">[content]</div>
-            </div>
-        </div>   
     </div>
 </body>
