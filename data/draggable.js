@@ -29,8 +29,16 @@ function openWin4() {
 // close windows
 
 function close2() {
-  document.getElementById("win2").style.display = "none";
+  var x =  document.getElementById("win2");
+  x.style.display = "none";
 }
+
+// --- work on pos reset ---
+// 
+//  x.style.top = "50%";
+//  x.style.left = "72%";
+//
+// -------------------------
 
 function close4() {
   document.getElementById("win4").style.display = "none";
