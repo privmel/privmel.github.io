@@ -10,6 +10,9 @@ to-do:
 > new window for music player
 > new window for tetris because why not >:)
 
-> animate background?
+
+> fix drag so the whole .div moves 
+
 
 > diff site for mobile
+  > [m.] domain
